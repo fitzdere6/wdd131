@@ -71,3 +71,16 @@ ol li { margin: 0.45rem 0; }
   height: auto;
   display: block;
 }
+
+body.dark {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark .subtitle {
+  color: #40B4E5;
+}
+
+body.dark .frame {
+  border-color: #666;
+}
