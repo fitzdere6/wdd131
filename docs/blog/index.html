@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Kids Read For Fun • Book Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kid-friendly book reviews with age ranges, genres, and ratings." />
+  <meta name="author" content="Derek Fitzgerald" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="blog.css" />
+  <script src="blog.js" defer></script>
+</head>
+<body>
+  <div class="skiptocontent">
+    <a href="#maincontent">Skip to main content</a>
+  </div>
+
+  <header class="site-header">
+    <h1 class="site-title">Kids Read For Fun</h1>
+    <nav aria-label="Primary navigation">
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="maincontent" class="layout">
+    <section class="posts" id="posts" aria-label="Book reviews"></section>
+
+    <aside class="filters" aria-label="Filters">
+      <h2 class="filters-title">Filters</h2>
+      <p>Filter form will go here.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Kids Read For Fun</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
