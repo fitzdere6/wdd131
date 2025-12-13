@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bulletproof Basics | Foundational Firearm Safety</title>
+
+    <link rel="icon" type="image/webp" href="images/websitelogo.webp" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bulletproof Basics teaches clear, foundational firearm safety for new shooters, families, and responsible gun owners."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-title">
+        <a href="index.html" class="logo-link">
+          <img
+            src="images/websitelogo.webp"
+            alt="Bulletproof Basics logo"
+            class="site-logo"
+          />
+        </a>
+        <div class="title-block">
+          <h1>Bulletproof Basics</h1>
+          <p class="tagline">Foundational Firearm Safety for Every Shooter</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="range-safety.html">Range Safety</a>
+        <a href="home-storage.html">Home Storage Safety</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Learn the Essentials of Firearm Safety</h2>
+          <p>
+            Simple, clear, and reliable safety principles designed for new
+            shooters, families, and responsible firearm owners.
+          </p>
+          <div class="hero-actions">
+            <a href="#core-safety-rules" class="btn secondary">
+              View Core Safety Rules
+            </a>
+            <a href="range-safety.html" class="btn secondary"
+              >Learn Range Safety</a
+            >
+          </div>
+        </div>
+        <div class="hero-image-placeholder" aria-hidden="true">
+          <img src="images/safeshootingimage.webp" alt="Gun range picture with ear protection and a handgun">
+          <span>Safe Shooting Image</span>
+        </div>
+      </section>
+
+      <section class="content-section" id="core-safety-rules">
+        <h2>The Mission</h2>
+        <p>
+          Bulletproof Basics exists to make shooter safety easy to understand
+          and simple to apply. Whether someone is brand new to firearms or just
+          wants to refresh their knowledge, this site breaks down every skill
+          into clear, approachable steps. No politics, no pressure—just
+          practical safety.
+        </p>
+        <p>
+          On this site you will learn the four rules of firearm safety, proper
+          handling and storage, safe range etiquette, situational awareness, and
+          basic gear for safe shooting.
+        </p>
+      </section>
+      <section class="content-section">
+        <h2>The Four Rules of Firearm Safety</h2>
+        <p>
+          These four rules are the foundation of responsible firearm handling.
+          Click a rule to see examples and a deeper explanation.
+        </p>
+        <ul id="rules-list" class="rules-list">
+        </ul>
+      </section>
+      <section class="content-section">
+        <h2>Gear You Need to Stay Safe</h2>
+        <p>
+          Before you head to the range, make sure you have the essential safety
+          gear. Use this checklist to track what you already have and what you
+          still need.
+        </p>
+
+        <div id="gear-checklist" class="checklist">
+        </div>
+        <p id="gear-status" class="gear-status"></p>
+      </section>
+      <section class="content-section">
+        <h2>What You'll Learn on This Website</h2>
+        <ul class="learn-list">
+          <li>
+            <strong>Range Safety:</strong> Learn how to behave safely
+            at public and private shooting ranges, including commands,
+            etiquette, and common mistakes.
+          </li>
+          <li>
+            <strong>Home Storage Safety:</strong> Understand secure
+            storage options, access control, and how to protect your home from
+            unauthorized access.
+          </li>
+        </ul>
+        <p class="cta-text">
+          Start your safety journey now: explore the rules, check the gear list,
+          and build confidence in your shooting skills.
+        </p>
+        <a href="range-safety.html" class="btn primary">Start with Range Safety</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Bulletproof Basics | Created by Derek Fitzgerald</p>
+      <p>
+      Helpful Resource:
+      <a href="https://www.usconcealedcarry.com/" target="_blank" rel="noopener noreferrer">
+      USCCA – Firearm Safety & Training Information
+      </a>
+      </p>
+      <p class="disclaimer">
+        Disclaimer: Bulletproof Basics is an independent educational website and is 
+        not affiliated with, endorsed by, or sponsored by the USCCA or any other organization.
+      </p>
+      <p class="disclaimer">
+        Additional Safety Notice: Always follow the rules, policies, and instructions
+        of your local shooting range and Range Safety Officers. Range procedures may
+        vary, and local rules should always take priority over general guidance.
+      </p>
+    </footer>
+    <div id="rules-modal" class="modal" aria-hidden="true">
+      <div
+        class="modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button class="modal-close" id="close-modal" aria-label="Close dialog">
+          &times;
+        </button>
+        <h2 id="modal-title">Rule Details</h2>
+        <p id="modal-body"></p>
+      </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

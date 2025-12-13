@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Range Safety | Bulletproof Basics</title>
+  <link rel="icon" type="image/webp" href="images/websitelogo.webp" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <script src="safety.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-title">
+      <a href="index.html" class="logo-link">
+        <img
+          src="images/websitelogo.webp"
+          alt="Bulletproof Basics logo"
+          class="site-logo"
+        />
+      </a>
+      <div class="title-block">
+        <h1>Bulletproof Basics</h1>
+        <p class="tagline">Foundational Firearm Safety for Every Shooter</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="range-safety.html" class="active">Range Safety</a>
+      <a href="home-storage.html">Home Storage Safety</a>
+    </nav>
+  </header>
+
+  <main class="page page-range">
+    <section class="hero hero-range">
+      <div class="hero-text">
+        <h1>Range Safety: Confident, Courteous, and In Control</h1>
+        <p>
+          Shooting ranges are designed to be safe and controlled environments.
+          Knowing how to act, what to listen for, and how to respond to commands
+          keeps everyone protected and helps you feel confident on the line.
+        </p>
+      </div>
+
+      <div class="hero-image-placeholder" aria-hidden="true">
+        <img
+          src="images/shooterimage.webp"
+          alt="Shooter at an outdoor range following safety rules"
+        />
+        <span>Range Safety Image</span>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Core Range Safety Principles</h2>
+      <p>
+        While every range may have slightly different rules, the core principles
+        are the same: listen to the range officer, follow posted rules, and
+        always prioritize safety over speed or pride.
+      </p>
+      <ul class="safety-list">
+        <li>Always follow the instructions of the Range Safety Officer (RSO).</li>
+        <li>Only handle firearms when and where it is permitted.</li>
+        <li>Keep your muzzle pointed downrange at all times.</li>
+        <li>Only load when you are on the firing line and allowed to do so.</li>
+        <li>Stop immediately if you are unsure or feel unsafe.</li>
+      </ul>
+    </section>
+
+<section class="range-commands">
+  <h2>Common Range Commands</h2>
+  <p>
+    Range commands keep everyone coordinated and safe. Click on a command
+    below to see what it means and how you should respond.
+  </p>
+
+  <div class="command-grid">
+    <button
+      class="command-card"
+      data-description="This command tells you that it is now safe and appropriate to load your firearm. You may insert a magazine or load rounds, close the action, and prepare to shoot while still keeping the muzzle pointed safely downrange. Do not fire until told to do so."
+    >
+      “Load and Make Ready”
+    </button>
+
+    <button
+      class="command-card"
+      data-description="This command authorizes you to begin shooting. Fire in a controlled, safe manner while keeping your awareness on the muzzle, your target, and what is beyond it. Stop firing immediately if you hear any conflicting command such as “Cease Fire.”"
+    >
+      “Commence Firing” / “Fire”
+    </button>
+
+    <button
+      class="command-card"
+      data-description="Stop shooting immediately. Take your finger off the trigger, keep the firearm pointed downrange, and wait for further instructions. Do not load, unload, or move your firearm until the Range Safety Officer tells you what to do next."
+    >
+      “Cease Fire”
+    </button>
+
+    <button
+      class="command-card"
+      data-description="This command tells you to remove all ammunition from the firearm and prove that it is empty. Drop the magazine (if applicable), open the action, visually and physically inspect the chamber, and then present the open, empty firearm so the Range Safety Officer can verify it is clear."
+    >
+      “Unload and Show Clear”
+    </button>
+
+    <button
+      class="command-card"
+      data-description="When the range is cold, no one should be handling firearms. Firearms must be unloaded, actions open, and left on the bench or rack. Shooters may go downrange to set up or check targets only after the Range Safety Officer confirms the line is safe."
+    >
+      “Range Is Cold”
+    </button>
+
+    <button
+      class="command-card"
+      data-description="A hot range means firearms may be handled and fired from the firing line. Do not go downrange during a hot range. All handling must still follow the four universal rules of firearm safety."
+    >
+      “Range Is Hot”
+    </button>
+  </div>
+</section>
+
+
+    <section class="content-section">
+      <h2>Range Etiquette &amp; Best Practices</h2>
+        <img 
+            src="images/gunrange.webp" 
+            alt="Gun range showing safe shooter behavior" 
+            class="etiquette-image"
+        />
+      <ul class="safety-list">
+        <li>Arrive early so you can review posted rules before shooting.</li>
+        <li>Keep conversations respectful and avoid distracting other shooters.</li>
+        <li>Ask questions! RSOs would rather answer questions than fix mistakes.</li>
+        <li>Clean up your area, brass, and trash before leaving if the range allows.</li>
+        <li>Never be afraid to call “Cease Fire” if you see something unsafe.</li>
+      </ul>
+      <p>
+        Remember, being a good range neighbor is just as important as being a
+        skilled shooter. Courtesy and safety go hand in hand.
+      </p>
+    </section>
+
+    <section class="content-section cta-section">
+      <h2>Ready to Practice Safe Shooting?</h2>
+      <p>
+        Review these commands before your next range visit and practice how you
+        will respond. The more familiar you are with the language of the range,
+        the more confident and calm you will feel when it matters.
+      </p>
+      <a class="btn primary" href="home-storage.html">Home Storage Safety</a>
+    </section>
+  </main>
+
+<div class="modal" id="commandModal" aria-hidden="true">
+  <div
+    class="modal-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="commandModalTitle"
+    tabindex="-1"
+  >
+    <button class="modal-close" id="commandModalClose" aria-label="Close">
+      &times;
+    </button>
+    <h2 id="commandModalTitle">Range Command</h2>
+    <p id="commandModalDescription">
+    </p>
+  </div>
+</div>
+
+    <footer>
+      <p>&copy; 2025 Bulletproof Basics | Created by Derek Fitzgerald</p>
+      <p>
+      Helpful Resource:
+      <a href="https://www.usconcealedcarry.com/" target="_blank" rel="noopener noreferrer">
+      USCCA – Firearm Safety & Training Information
+      </a>
+      </p>
+      <p class="disclaimer">
+        Disclaimer: Bulletproof Basics is an independent educational website and is 
+        not affiliated with, endorsed by, or sponsored by the USCCA or any other organization.
+      </p>
+      <p class="disclaimer">
+        Additional Safety Notice: Always follow the rules, policies, and instructions
+        of your local shooting range and Range Safety Officers. Range procedures may
+        vary, and local rules should always take priority over general guidance.
+      </p>
+    </footer>
+</body>
+</html>
